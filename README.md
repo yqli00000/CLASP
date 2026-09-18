@@ -1,4 +1,4 @@
-# PATE-Forensics: Perception-as-Tool for Explainable Image Forgery Detection and Localization
+# CLASP: Collaboration between MLLMs and Specialized Perception Tools for Explainable Image Forgery Detection and Localization
 
 A multi-granularity forensic framework for image forgery detection, localization, and explanation.
 
@@ -6,13 +6,13 @@ A multi-granularity forensic framework for image forgery detection, localization
 
 ![Perception-as-Tool framework](assets/comparison.png)
 
-Rather than fine-tuning an MLLM to perform detection, localization, and explanation, the Perception-as-Tool framework decouples specialized forgery perception from natural language generation.
+Rather than fine-tuning an MLLM to perform detection, localization, and explanation, the collaborative framework between forgery perception tools and MLLMs decouples specialized forgery perception from natural language generation.
 
 ## Method
 
 ![PATE-Forensics architecture](assets/method_cn.png)
 
-Built on DINOv3-L/16 with LoRA adaptation, PATE-Forensics jointly models global, patch-level, and region-level evidence and uses localization outputs to guide an MLLM in generating explanations of visible forgery traces.
+Built on DINOv3-L/16 with LoRA adaptation,  CLASP jointly models global, patch-level, and region-level evidence and uses localization outputs to guide an MLLM in generating explanations of visible forgery traces.
 
 ## Environment
 
@@ -124,7 +124,7 @@ change the scores.
 
 ## Main Results
 
-The following PATE-Forensics results are reported in the paper, not obtained from runtime smoke tests. Values retain the scales used in the paper.
+The following CLASP results are reported in the paper, not obtained from runtime smoke tests. Values retain the scales used in the paper.
 
 ### DDL-X
 
@@ -132,7 +132,7 @@ Official evaluation scores.
 
 | Method | Overall Score ↑ | Weighted ACC Score ↑ | Weighted IoU Score ↑ | Weighted BERTScore ↑ | Weighted Rub. Score ↑ |
 |---|---:|---:|---:|---:|---:|
-| PATE-Forensics | **0.8940** | **0.1995** | **0.3079** | **0.0943** | **0.2923** |
+| CLASP | **0.8940** | **0.1995** | **0.3079** | **0.0943** | **0.2923** |
 
 ### OpenSDI
 
