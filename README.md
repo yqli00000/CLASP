@@ -10,7 +10,7 @@ Rather than fine-tuning an MLLM to perform detection, localization, and explanat
 
 ## Method
 
-![PATE-Forensics architecture](assets/method_cn.png)
+![PATE-Forensics architecture](assets/method_cn_v3.png)
 
 Built on DINOv3-L/16 with LoRA adaptation,  CLASP jointly models global, patch-level, and region-level evidence and uses localization outputs to guide an MLLM in generating explanations of visible forgery traces.
 
